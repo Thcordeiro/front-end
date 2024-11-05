@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Transferência</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #003366, #4c9fcc);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 20px;
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>REALIZE SUA TRANSFERÊNCIA</h1>
+        <input type="text" id="account" placeholder="Informa a conta a transferir:">
+        <input type="number" id="amount" placeholder="Valor a ser transferido:">
+        <button onclick="proceed()">Prosseguir</button>
+    </div>
+
+    <script>
+        function proceed() {
+            const account = document.getElementById('account').value;
+            const amount = document.getElementById('amount').value;
+
+            if (!account || !amount) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            alert(`Transferência para a conta ${account} no valor de R$ ${amount} realizada com sucesso!`);
+            // Aqui, você pode adicionar a lógica para realizar a transferência
+        }
+    </script>
+</body>
+</html>

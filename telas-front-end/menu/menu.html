@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    /* Estilos para o fundo e centralização */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #003366, #4c9fcc);
+    }
+
+    /* Estilos do container */
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    /* Estilos do título */
+    h1 {
+      color: white;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Estilos para o subtítulo */
+    p {
+      color: white;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos dos botões */
+    .button-row {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 15px;
+    }
+
+    .button {
+      width: 120px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .button.black {
+      background-color: black;
+      color: white;
+    }
+
+    .button.gray {
+      background-color: #ccc;
+      color: black;
+    }
+
+    /* Estilos dos ícones */
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .icon {
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Menu</h1>
+    <p>Como Devemos Prosseguir?</p>
+
+    <!-- Primeira linha de botões -->
+    <div class="button-row">
+      <button class="button black">Depósito</button>
+      <button class="button gray">Transferência</button>
+    </div>
+
+    <!-- Segunda linha de botões -->
+    <div class="button-row">
+      <button class="button gray">Saque</button>
+      <button class="button black">Pagamento</button>
+    </div>
+
+    <!-- Ícones abaixo dos botões -->
+    <div class="icons">
+      <i class="icon fas fa-clock"></i>
+      <i class="icon fas fa-book"></i>
+    </div>
+  </div>
+
+  <!-- Link para Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
